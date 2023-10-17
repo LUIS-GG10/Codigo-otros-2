@@ -1,3 +1,6 @@
+<!-- 21 
+Octavio Esteves -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,25 +11,28 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
   <title>Formulario</title>
 </head>
+
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+  <form class="formulario" method="post" >
+    <label for="name">nombre</label>
+    <input type="text" name="name" id="name">
     <br />
-    Edad <input type="number" name="age" id="age">
+    <label for="age">edad</label>
+    <input type="number" name="age" id="age">
     <br />
 
-    Nacionalidad
-    <select name="nationality" id="nationality">
+    <label for="nationality">nacionalidad</label>
+    <!-- <select name="nationality" id="nationality">
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
       <option value="per">Peruana</option>
       <option value="vnzl">Venezolana</option>
-    </select>
+    </select> -->
     <br />
-    <input type="submit">
+    <button type="submit">
   </form>
 
   <div>
@@ -34,7 +40,7 @@
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="/codigo-otros-2/formulario.js"></script>
 </body>
 
 </html>
